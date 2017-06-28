@@ -10,4 +10,4 @@ applications:
 - name: webtrader
   random-route: false
   path: libs/web-${version}.jar
-  services: [ discovery-service, circuit-breaker-dashboard, config-server ]
+  services: [ discovery-service, circuit-breaker-dashboard, config-server, zipkinRabbit ]
