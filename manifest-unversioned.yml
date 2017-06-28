@@ -8,6 +8,6 @@ env:
     JBP_CONFIG_OPEN_JDK_JRE: '[memory_calculator: { memory_sizes: { metaspace: 200m }}]'
 applications:
 - name: webtrader
-  random-route: true
+  random-route: false
   path: libs/web-${version}.jar
-  services: [ discovery-service, circuit-breaker-dashboard, config-server, zipkinRabbit ]
+  services: [ discovery-service, circuit-breaker-dashboard, config-server ]
